@@ -10,12 +10,21 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool{
+    
         // Override point for customization after application launch.
+        //设置系统导航栏
+//        let VC=ViewController()
+//        let navigationC=UINavigationController(rootViewController: VC)
+//        self.window?.rootViewController=navigationC
+//        UINavigationBar.appearance().barTintColor = UIColor.blue;
+//        self.window?.backgroundColor=UIColor.white
+        var tabBarController = TabbarViewController()
+        
+        self.window!.rootViewController = tabBarController
         return true
     }
 

@@ -14,6 +14,14 @@
 		6C261DE0201043A000AA9691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C261DDE201043A000AA9691 /* LaunchScreen.storyboard */; };
 		6C261DEB201043A100AA9691 /* Wangzhan_swfit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261DEA201043A100AA9691 /* Wangzhan_swfit_Tests.swift */; };
 		6C261DF6201043A100AA9691 /* Wangzhan_swfit_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261DF5201043A100AA9691 /* Wangzhan_swfit_UITests.swift */; };
+		6C261E1D201068EF00AA9691 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E1C201068EF00AA9691 /* TabbarViewController.swift */; };
+		6C261E1F2010744400AA9691 /* WZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E1E2010744400AA9691 /* WZMainViewController.swift */; };
+		6C261E212010745300AA9691 /* WZMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E202010745300AA9691 /* WZMyViewController.swift */; };
+		6C261E232010746600AA9691 /* WZGlobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E222010746600AA9691 /* WZGlobeViewController.swift */; };
+		6C261E252010747300AA9691 /* WZMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E242010747300AA9691 /* WZMessageViewController.swift */; };
+		6C261E272010924700AA9691 /* WZMainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E262010924700AA9691 /* WZMainDetailViewController.swift */; };
+		6C261E292011C01600AA9691 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E282011C01600AA9691 /* BaseViewController.swift */; };
+		6C261E2B201589EF00AA9691 /* WZCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C261E2A201589EE00AA9691 /* WZCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		6C261DF1201043A100AA9691 /* Wangzhan（swfit）UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wangzhan（swfit）UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C261DF5201043A100AA9691 /* Wangzhan_swfit_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wangzhan_swfit_UITests.swift; sourceTree = "<group>"; };
 		6C261DF7201043A100AA9691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C261E1C201068EF00AA9691 /* TabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		6C261E1E2010744400AA9691 /* WZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZMainViewController.swift; sourceTree = "<group>"; };
+		6C261E202010745300AA9691 /* WZMyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZMyViewController.swift; sourceTree = "<group>"; };
+		6C261E222010746600AA9691 /* WZGlobeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZGlobeViewController.swift; sourceTree = "<group>"; };
+		6C261E242010747300AA9691 /* WZMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZMessageViewController.swift; sourceTree = "<group>"; };
+		6C261E262010924700AA9691 /* WZMainDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZMainDetailViewController.swift; sourceTree = "<group>"; };
+		6C261E282011C01600AA9691 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6C261E2A201589EE00AA9691 /* WZCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WZCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,13 @@
 				6C261DD5201043A000AA9691 /* AppDelegate.swift */,
 				6C261DD7201043A000AA9691 /* ViewController.swift */,
 				6C261DD9201043A000AA9691 /* Main.storyboard */,
+				6C261E032010443700AA9691 /* 基础库 */,
+				6C261E042010443700AA9691 /* 首页 */,
+				6C261E052010443700AA9691 /* 网络 */,
+				6C261E062010443700AA9691 /* 我的 */,
+				6C261E072010443700AA9691 /* 展馆 */,
+				6C261E082010443700AA9691 /* 资讯 */,
+				6C261E092010443700AA9691 /* Tabbar */,
 				6C261DDC201043A000AA9691 /* Assets.xcassets */,
 				6C261DDE201043A000AA9691 /* LaunchScreen.storyboard */,
 				6C261DE1201043A000AA9691 /* Info.plist */,
@@ -123,6 +146,159 @@
 				6C261DF7201043A100AA9691 /* Info.plist */,
 			);
 			path = "Wangzhan（swfit）UITests";
+			sourceTree = "<group>";
+		};
+		6C261E032010443700AA9691 /* 基础库 */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E282011C01600AA9691 /* BaseViewController.swift */,
+			);
+			path = "基础库";
+			sourceTree = "<group>";
+		};
+		6C261E042010443700AA9691 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E0A201048CE00AA9691 /* Controllers */,
+				6C261E0B201048CE00AA9691 /* Models */,
+				6C261E0C201048CE00AA9691 /* Views */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		6C261E052010443700AA9691 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		6C261E062010443700AA9691 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E0D201048D600AA9691 /* Controllers */,
+				6C261E0E201048D600AA9691 /* Models */,
+				6C261E0F201048D600AA9691 /* Views */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		6C261E072010443700AA9691 /* 展馆 */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E10201048DC00AA9691 /* Controllers */,
+				6C261E11201048DC00AA9691 /* Models */,
+				6C261E12201048DC00AA9691 /* Views */,
+			);
+			path = "展馆";
+			sourceTree = "<group>";
+		};
+		6C261E082010443700AA9691 /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E13201048E200AA9691 /* Controllers */,
+				6C261E14201048E200AA9691 /* Models */,
+				6C261E15201048E200AA9691 /* Views */,
+			);
+			path = "资讯";
+			sourceTree = "<group>";
+		};
+		6C261E092010443700AA9691 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E1C201068EF00AA9691 /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		6C261E0A201048CE00AA9691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E1E2010744400AA9691 /* WZMainViewController.swift */,
+				6C261E262010924700AA9691 /* WZMainDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C261E0B201048CE00AA9691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C261E0C201048CE00AA9691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E2A201589EE00AA9691 /* WZCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C261E0D201048D600AA9691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E202010745300AA9691 /* WZMyViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C261E0E201048D600AA9691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C261E0F201048D600AA9691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C261E10201048DC00AA9691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E222010746600AA9691 /* WZGlobeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C261E11201048DC00AA9691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C261E12201048DC00AA9691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C261E13201048E200AA9691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C261E242010747300AA9691 /* WZMessageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C261E14201048E200AA9691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6C261E15201048E200AA9691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +369,7 @@
 				TargetAttributes = {
 					6C261DD1201043A000AA9691 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = FUM9FP898F;
 						ProvisioningStyle = Automatic;
 					};
 					6C261DE5201043A100AA9691 = {
@@ -259,8 +436,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C261E212010745300AA9691 /* WZMyViewController.swift in Sources */,
+				6C261E232010746600AA9691 /* WZGlobeViewController.swift in Sources */,
 				6C261DD8201043A000AA9691 /* ViewController.swift in Sources */,
 				6C261DD6201043A000AA9691 /* AppDelegate.swift in Sources */,
+				6C261E2B201589EF00AA9691 /* WZCell.swift in Sources */,
+				6C261E252010747300AA9691 /* WZMessageViewController.swift in Sources */,
+				6C261E292011C01600AA9691 /* BaseViewController.swift in Sources */,
+				6C261E1F2010744400AA9691 /* WZMainViewController.swift in Sources */,
+				6C261E272010924700AA9691 /* WZMainDetailViewController.swift in Sources */,
+				6C261E1D201068EF00AA9691 /* TabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FUM9FP898F;
 				INFOPLIST_FILE = "Wangzhan（swfit）/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mandb.chirs.Wangzhan-swfit-";
@@ -424,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FUM9FP898F;
 				INFOPLIST_FILE = "Wangzhan（swfit）/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mandb.chirs.Wangzhan-swfit-";
