@@ -21,17 +21,17 @@ class WZMainViewController: UIViewController {
         self.navigationController?.navigationBar.addGestureRecognizer(tap)
         //创建collection
         // Do any additional setup after loading the view.
-        self.collectionView = UICollectionView.init(frame: self.view.bounds)
-        self.view.addSubview(self.collectionView)
-        self.collectionView.dataSource = self as! UICollectionViewDataSource
-        self.collectionView.delegate = self as! UICollectionViewDelegate
-
-        let layout = UICollectionViewFlowLayout.init()
-        layout.itemSize = CGSize.init(width: 100, height: 100)
-        layout.minimumLineSpacing = 30
-        layout.sectionInset = UIEdgeInsets.init(top: 0, left: 30, bottom: 0, right: 30)
-        self.collectionView.collectionViewLayout = layout
-        self.collectionView.register(WZCell.self, forCellWithReuseIdentifier: "WZCell")
+//        self.collectionView = UICollectionView.init(frame: self.view.bounds)
+//        self.view.addSubview(self.collectionView)
+//        self.collectionView.dataSource = self as! UICollectionViewDataSource
+//        self.collectionView.delegate = self as! UICollectionViewDelegate
+//
+//        let layout = UICollectionViewFlowLayout.init()
+//        layout.itemSize = CGSize.init(width: 100, height: 100)
+//        layout.minimumLineSpacing = 30
+//        layout.sectionInset = UIEdgeInsets.init(top: 0, left: 30, bottom: 0, right: 30)
+//        self.collectionView.collectionViewLayout = layout
+//        self.collectionView.register(WZCell.self, forCellWithReuseIdentifier: "WZCell")
     }
     @objc func tapDown(sender:UITapGestureRecognizer){
         
@@ -41,16 +41,16 @@ class WZMainViewController: UIViewController {
         self.hidesBottomBarWhenPushed = false
     }
     //MARK  collectionDatasource  delegate
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
+//    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 5
+//    }
     //footerView必须的方法
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        //判断如果 kind 是footerView类型
-      var cell = WZCell()
-        cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WZCell", for: indexPath as IndexPath) as! WZCell
-        return cell
-    }
+//    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+//        //判断如果 kind 是footerView类型
+//      var cell = WZCell()
+//        cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WZCell", for: indexPath as IndexPath) as! WZCell
+//        return cell
+//    }
     //footerView的大小
     //footview
     //
