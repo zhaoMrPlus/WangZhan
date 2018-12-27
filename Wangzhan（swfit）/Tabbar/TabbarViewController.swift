@@ -24,7 +24,7 @@ class TabbarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var screenFrame = UIScreen.main.bounds
+        let screenFrame = UIScreen.main.bounds
         scrrenWidth = screenFrame.width
         screenHeight = screenFrame.height
         self.view.backgroundColor=UIColor.white
@@ -43,18 +43,19 @@ class TabbarViewController: UITabBarController {
         let tabbarOffsetX = scrrenWidth!/4
         let tabbarX = tabbarOffsetX/2 - tabbarWidth/2
         let tabbarY = tabbarViewHeight/2 - tabbarHeight/2
-        var tabbarView = UIView(frame:CGRect(x:0,y:screenHeight! - tabbarViewHeight,width:scrrenWidth!,height:tabbarViewHeight))
+        let tabbarView = UIView(frame:CGRect(x:0,y:screenHeight! - tabbarViewHeight,width:scrrenWidth!,height:tabbarViewHeight))
         tabbarView.backgroundColor=UIColor.cyan
         
         self.view.addSubview(tabbarView)
         
         for index in 0..<imageArr.count {
-            var tabBar_X = (CGFloat)(index) * tabbarOffsetX
-            var btn = UIButton(frame: CGRect(x:(CGFloat)(tabbarX + tabBar_X), y:(CGFloat)(tabbarY), width:tabbarWidth, height:tabbarHeight))
+            let tabBar_X = (CGFloat)(index) * tabbarOffsetX
+            let btn = UIButton(frame: CGRect(x:(CGFloat)(tabbarX + tabBar_X), y:(CGFloat)(tabbarY), width:tabbarWidth, height:tabbarHeight))
             btn.setImage(UIImage(named: imageArr[index]),for:.normal)
             btn.addTarget(self, action: #selector(btnClick(sender:)), for:.touchUpInside)
             tabbarView.addSubview(btn)
             tabbuttons.append(btn)
+            btn.tag = index + 100;
         }
         
         
@@ -63,7 +64,7 @@ class TabbarViewController: UITabBarController {
     }
     @objc func btnClick(sender:UIButton?) {
         print("xxxx");
-        var indexSel = (sender?.tag)! - 100
+        let indexSel = (sender?.tag)! - 100
         self.selectedIndex = indexSel
         for index in 0..<tabbuttons.count
         {
@@ -90,7 +91,7 @@ class TabbarViewController: UITabBarController {
             {
                 if(index != 3)
                 {
-                    var navController = UINavigationController(rootViewController: viewArr[index])
+                    let navController = UINavigationController(rootViewController: viewArr[index])
                     viewCtlArr.append(navController)
                 }else{
                     viewCtlArr.append(viewArr[index])
